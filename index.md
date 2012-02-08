@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: markdown
 title: git-tfs
 ---
 
@@ -41,7 +41,8 @@ git-tfs is a two-way bridge between TFS and git, similar to git-svn.
 
 ## Installing
 
-[Download](https://github.com/git-tfs/git-tfs/downloads#uploaded_downloads) or [build](https://github.com/git-tfs/git-tfs/wiki/BuildInstructions).
+[Download](https://github.com/git-tfs/git-tfs/downloads#uploaded_downloads) or
+[build](https://github.com/git-tfs/git-tfs/wiki/HowTo+Build).
 
 Add the directory that contains git-tfs.exe to your path. 
 

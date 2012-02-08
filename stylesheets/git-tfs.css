@@ -1,19 +1,11 @@
 body {
-  padding: 0;
-  margin: 0;
-  background: url('graphy.png');
-  font-family: Trebuchet, Verdana, sans serif;
+  background-image: url('../images/graphy.png');
+}
+.container {
+  padding-top: 1em;
+  background: white;
 }
 
-.main {
-  margin: 1em auto;
-  padding: 5em;
-  width: 800px;
-  background-color: white;
-  border-radius: 3em;
-}
-.content {
-}
 h1, h2 {
   border-radius: 5px;
   margin-left: -5px;
@@ -26,7 +18,6 @@ h1 {
 h2 {
   background-color: rgb(242,242,242);
 }
-
 
 .forkme {
   position: absolute;
