@@ -27,6 +27,17 @@ h1 {
 h2 {
   background-color: rgb(242,242,242);
 }
+.footer {
+  border-top: solid 1px rgb(221,221,221);
+  font-size: xx-small;
+  text-align: center;
+}
+.footer .item:before {
+  content: ' || ';
+}
+.footer .item:first-child:before {
+  content: '';
+}
 
 .forkme {
   position: absolute;
