@@ -41,12 +41,9 @@ git-tfs is a two-way bridge between TFS and git, similar to git-svn.
 
 ## Installing
 
-[Download](https://github.com/git-tfs/git-tfs/downloads#uploaded_downloads) or
-[build](https://github.com/git-tfs/git-tfs/wiki/HowTo+Build).
+Using [Chocolatey](http://chocolatey.org/):
 
-Add the directory that contains git-tfs.exe to your path. 
-
-I've been using this with [msysgit 1.7.3.1](http://code.google.com/p/msysgit/) for a while.
+``` cinst GitTfs ```
 
 You need .NET 4 and either the 2008 or 2010 version of Team Explorer installed.
 
