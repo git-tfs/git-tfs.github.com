@@ -5,3 +5,6 @@ exclude:
   - config.rb
   - Gemfile
   - Gemfile.lock
+  - Rakefile
+  - vendor
+  - bin
