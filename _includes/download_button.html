@@ -1,2 +1,10 @@
 <div class="js-download-container">
 </div>
+<script src="javascripts/spin.min.js"></script>
+<script>
+  (function() {
+    var spinner = new Spinner({color: '#444', radius: 5, length: 4, width: 2, top: 0});
+    spinner.spin(document.getElementsByClassName('js-download-container')[0]);
+    window.spinner = spinner;
+  })();
+</script>
