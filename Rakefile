@@ -14,4 +14,4 @@ task :serve => :css do
   sh "#{jekyll_command} --server"
 end
 
-task :default => :serve
+task :default => :site
