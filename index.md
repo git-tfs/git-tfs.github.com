@@ -7,6 +7,8 @@ title: git-tfs
 
 git-tfs is a two-way bridge between TFS and git, similar to git-svn.
 
+Find much more information to the [github repository](https://github.com/git-tfs/git-tfs#introduction) of the project!
+
 ## Usage
 
 ### Cloning a repository
@@ -61,4 +63,4 @@ If you contribute patches, please set `core.autocrlf` to `true`. (`git config co
 ## Contributing
 
 Contributions are always welcome. For more information about contributing,
-please see [the wiki](http://github.com/git-tfs/git-tfs/wiki/Contributing).
+please see [contributing documentation](https://github.com/git-tfs/git-tfs/blob/master/CONTRIBUTING.md).
