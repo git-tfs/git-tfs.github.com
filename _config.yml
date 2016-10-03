@@ -1,6 +1,6 @@
 safe: true
 lsi: false
-pygments: true
+highligher: rouge
 markdown: kramdown
 exclude:
   - config.rb
