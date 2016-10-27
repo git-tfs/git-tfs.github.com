@@ -1,1 +1,13 @@
-<a href="https://github.com/git-tfs/git-tfs/releases/download/v0.25.1/GitTfs-0.25.1.zip" class="download-button">Download v0.25.1</a>
+<a id="download-button" href="https://github.com/git-tfs/git-tfs/releases/latest" class="download-button">Download git-tfs</a>
+<script>
+var req = new XMLHttpRequest();
+req.open("GET", "https://api.github.com/repos/git-tfs/git-tfs/releases/latest",true);
+req.onload = function () {
+	var latestRelease = JSON.parse(req.responseText);
+	var zip = latestRelease.assets[0].browser_download_url;
+	var button = document.getElementById('download-button');
+	button.setAttribute('href',zip);
+	button.innerHTML='Download ' + latestRelease.name;
+}
+req.send(null);
+</script>
