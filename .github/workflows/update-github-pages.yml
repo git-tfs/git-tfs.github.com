@@ -1,0 +1,26 @@
+name: Update GitHub pages ruby packages
+
+on: workflow_dispatch
+
+jobs:
+  update-gh-pages-package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Remove lock file
+        run: rm ./Gemfile.lock
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0' # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - name: Bundle install
+        run:  bundle install
+      - name: Commit
+        run: |
+          git config --local user.email `git show -s --format='%ae'`
+          git config --local user.name ${GITHUB_ACTOR}
+          git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
+          git add ./Gemfile.lock
+          git commit -m "Update GitHub pages ruby packages"
+          git push github HEAD:${GITHUB_REF}
